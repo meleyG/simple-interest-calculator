@@ -1,0 +1,18 @@
+body {
+    background-color:black;
+    font-family: Arial;
+    color: white;
+}
+h1{
+    color:grey;
+    font-family: verdana;
+}
+/*div in the html is seen as a section, so this below will only affect the section that has maindiv as an attribute*/
+.maindiv{
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align:center;
+}

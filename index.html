@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
+    </head>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+
+            Amount 
+            <input type="number"  id="principal">
+            <br>
+            <!--the range in the input associated with rate gives a slider..run code and see the slider..it also tells you that min = 1 and mas = 20 as you have stated in the attribute of the input tag for rate-->
+            Rate
+            <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+            <!--span displays the value selected on the range slider-->
+            <span id="rate_val">10.25</span> %
+            <br>
+            No. of Years
+            <input type="number"  id="years" list="all_years">
+            <br>
+            <!--you can use the dropdownlist to select the no of years , but you have to comment the input tag for "no of years" above to make the dropdownlist list work-->
+           <!--<select id="years">
+            <option for="years">1</option>
+            <option for="years">2</option>
+            <option for="years">3</option>
+            <option for="years">4</option>
+            <option for="years">5</option>
+            <option for="years">6</option>
+            <option for="years">7</option>
+            <option for="years">8</option>
+            <option for="years">9</option>
+            <option for="years">10</option>
+           </select>-->
+           <br>
+           <!--the span here will display the result of the output-->
+            Interest : <span id="result"></span>
+            <br>
+           <!--go to the javascript to see the compute() function-->
+            <button onclick="compute()">Compute Interest</button>
+        </div>
+        <footer>
+            &#169; This Calculator belongs to Melody Godspower
+        </footer>
+    </body>
+    
+</html>
